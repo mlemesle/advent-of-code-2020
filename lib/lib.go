@@ -23,3 +23,17 @@ func ReadAllLineToInt(filepath string) ([]int, error) {
 	}
 	return result, nil
 }
+
+func ReadAllLineToString(filepath string) ([]string, error) {
+	file, err := os.Open(filepath)
+	if err != nil {
+		return nil, err
+	}
+	defer file.Close()
+	s := bufio.NewScanner(file)
+	var result []string
+	for s.Scan() {
+		result = append(result, s.Text())
+	}
+	return result, nil
+}
