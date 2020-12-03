@@ -37,3 +37,17 @@ func ReadAllLineToString(filepath string) ([]string, error) {
 	}
 	return result, nil
 }
+
+func ReadAllLineToRuneSlice(filepath string) ([][]rune, error) {
+	file, err := os.Open(filepath)
+	if err != nil {
+		return nil, err
+	}
+	defer file.Close()
+	s := bufio.NewScanner(file)
+	var result [][]rune
+	for s.Scan() {
+		result = append(result, []rune(s.Text()))
+	}
+	return result, nil
+}
