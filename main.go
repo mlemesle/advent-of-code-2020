@@ -7,12 +7,12 @@ import (
 	"github.com/mlemesle/advent-of-code-2020/day2"
 	"github.com/mlemesle/advent-of-code-2020/day3"
 	"github.com/mlemesle/advent-of-code-2020/day4"
-	// "os"
+	"github.com/mlemesle/advent-of-code-2020/day5"
+	"os"
 )
 
 func main() {
-	// exerciseToRun := os.Args[1]
-	exerciseToRun := "42"
+	exerciseToRun := os.Args[1]
 	var res interface{}
 	var err error
 	switch exerciseToRun {
@@ -32,6 +32,10 @@ func main() {
 		res, err = day4.Part1()
 	case "42":
 		res, err = day4.Part2()
+	case "51":
+		res, err = day5.Part1()
+	case "52":
+		res, err = day5.Part2()
 	default:
 		res, err = "", errors.New("Unknow exercise")
 	}
