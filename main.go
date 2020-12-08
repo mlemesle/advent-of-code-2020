@@ -10,6 +10,7 @@ import (
 	"github.com/mlemesle/advent-of-code-2020/day5"
 	"github.com/mlemesle/advent-of-code-2020/day6"
 	"github.com/mlemesle/advent-of-code-2020/day7"
+	"github.com/mlemesle/advent-of-code-2020/day8"
 	"os"
 )
 
@@ -46,6 +47,10 @@ func main() {
 		res, err = day7.Part1("shiny gold")
 	case "72":
 		res, err = day7.Part2("shiny gold")
+	case "81":
+		res, err = day8.Part1()
+	case "82":
+		res, err = day8.Part2()
 	default:
 		res, err = "", errors.New("Unknow exercise")
 	}
