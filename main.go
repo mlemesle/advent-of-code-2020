@@ -13,12 +13,11 @@ import (
 	"github.com/mlemesle/advent-of-code-2020/day7"
 	"github.com/mlemesle/advent-of-code-2020/day8"
 	"github.com/mlemesle/advent-of-code-2020/day9"
-	// "os"
+	"os"
 )
 
 func main() {
-	// exerciseToRun := os.Args[1]
-	exerciseToRun := "102"
+	exerciseToRun := os.Args[1]
 	var res interface{}
 	var err error
 	switch exerciseToRun {
