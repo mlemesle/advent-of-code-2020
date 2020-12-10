@@ -4,6 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/mlemesle/advent-of-code-2020/day1"
+	"github.com/mlemesle/advent-of-code-2020/day10"
 	"github.com/mlemesle/advent-of-code-2020/day2"
 	"github.com/mlemesle/advent-of-code-2020/day3"
 	"github.com/mlemesle/advent-of-code-2020/day4"
@@ -12,11 +13,12 @@ import (
 	"github.com/mlemesle/advent-of-code-2020/day7"
 	"github.com/mlemesle/advent-of-code-2020/day8"
 	"github.com/mlemesle/advent-of-code-2020/day9"
-	"os"
+	// "os"
 )
 
 func main() {
-	exerciseToRun := os.Args[1]
+	// exerciseToRun := os.Args[1]
+	exerciseToRun := "102"
 	var res interface{}
 	var err error
 	switch exerciseToRun {
@@ -56,6 +58,10 @@ func main() {
 		res, err = day9.Part1(25)
 	case "92":
 		res, err = day9.Part2(25)
+	case "101":
+		res, err = day10.Part1()
+	case "102":
+		res, err = day10.Part2()
 	default:
 		res, err = "", errors.New("Unknow exercise")
 	}
