@@ -231,7 +231,7 @@ func toSeatMatrix(t [][]rune) seatsMatrix {
 }
 
 func Part1() (int, error) {
-	t, err := lib.ReadAllLineToRuneSlice("day11/message.txt")
+	t, err := lib.ReadAllLineToRuneSlice("day11/input.txt")
 	if err != nil {
 		return 0, err
 	}
@@ -246,7 +246,7 @@ func Part1() (int, error) {
 }
 
 func Part2() (int, error) {
-	t, err := lib.ReadAllLineToRuneSlice("day11/message.txt")
+	t, err := lib.ReadAllLineToRuneSlice("day11/input.txt")
 	if err != nil {
 		return 0, err
 	}
