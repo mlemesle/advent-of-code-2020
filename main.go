@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"github.com/mlemesle/advent-of-code-2020/day1"
 	"github.com/mlemesle/advent-of-code-2020/day10"
+	"github.com/mlemesle/advent-of-code-2020/day11"
 	"github.com/mlemesle/advent-of-code-2020/day2"
 	"github.com/mlemesle/advent-of-code-2020/day3"
 	"github.com/mlemesle/advent-of-code-2020/day4"
@@ -61,6 +62,10 @@ func main() {
 		res, err = day10.Part1()
 	case "102":
 		res, err = day10.Part2()
+	case "111":
+		res, err = day11.Part1()
+	case "112":
+		res, err = day11.Part2()
 	default:
 		res, err = "", errors.New("Unknow exercise")
 	}
