@@ -9,6 +9,7 @@ import (
 	"github.com/mlemesle/advent-of-code-2020/day12"
 	"github.com/mlemesle/advent-of-code-2020/day13"
 	"github.com/mlemesle/advent-of-code-2020/day14"
+	"github.com/mlemesle/advent-of-code-2020/day15"
 	"github.com/mlemesle/advent-of-code-2020/day2"
 	"github.com/mlemesle/advent-of-code-2020/day3"
 	"github.com/mlemesle/advent-of-code-2020/day4"
@@ -81,6 +82,10 @@ func main() {
 		res, err = day14.Part1()
 	case "142":
 		res, err = day14.Part2()
+	case "151":
+		res, err = day15.Part1()
+	case "152":
+		res, err = day15.Part2()
 	default:
 		res, err = "", errors.New("Unknow exercise")
 	}
